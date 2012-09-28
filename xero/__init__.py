@@ -242,11 +242,11 @@ class Manager(object):
             if params:
                 uri += '?where=' + urllib.quote('&&'.join(params))
 
-        return uri, 'GET', None, headers
+        return uri, 'GET', '', headers
 
     def all(self):
         uri = '/'.join([XERO_API_URL, self.name])
-        return uri, 'GET', None, None
+        return uri, 'GET', '', None
 
 class Xero(object):
     """
