@@ -257,7 +257,7 @@ class Xero(object):
 
     OBJECT_LIST = (u'Contacts', u'Accounts', u'CreditNotes',
                    u'Currencies', u'Invoices', u'Organisation',
-                   u'Payments', u'TaxRates', u'TrackingCategories')
+                   u'Payments', u'TaxRates', u'TrackingCategories', u'ManualJournals')
 
     def __init__(self, consumer_key, consumer_secret, privatekey):
         # instantiate our private api client
